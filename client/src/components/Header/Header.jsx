@@ -26,7 +26,7 @@ const Header = () => {
     }, []);
 
     const { cartCount, showCart, setShowCart } = useContext(Context);
-
+ 
     return (
         <>
             <header

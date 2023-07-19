@@ -24,17 +24,16 @@ const Cart = () => {
             await stripe.redirectToCheckout({
                 sessionId: res.data.stripeSession.id,
             });
-        } catch (err) {
-            console.log(err);
+        } catch (error) {
+            console.log(error);
         }
     };
 
     return (
         <div className="cart-panel">
-            <div
-                className="opac-layer"
+            <div className="opac-layer">
                 onClick={() => setShowCart(false)}
-            ></div>
+            </div>
             <div className="cart-content">
                 <div className="cart-header">
                     <span className="heading">Shopping Cart</span>
